@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="F:\html_code\css_code\test.css">
+</head>
+
+<body>
+    <iframe src=".\text_fommat.html"> </iframe>
+    <p id="demo">
+        Javascript 能改变HTML元素的样式
+    </p>
+    <script>
+        function myFunction() {
+            x = document.getElementById("demo") //找到元素
+            x.style.color = "#ff0000";
+        }
+    </script>
+    <button type="button" onclick="myFunction()">点击这里</button>
+    <P>
+        引入了css导致的变色
+    </P>
+</body>
+
+
+
+</html>

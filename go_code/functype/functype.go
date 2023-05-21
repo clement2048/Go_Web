@@ -1,29 +1,29 @@
 package main
 
-import(
+import (
 	"fmt"
 )
 
-func add(a, b int) int{
+func add(a, b int) int {
 	return a + b
 }
 
-func minus(a, b int) int{
+func minus(a, b int) int {
 	return a - b
 }
 
-// º¯ÊıÒ²ÊÇÒ»ÖÖÊı¾İÀàĞÍ£¬ Í¨¹ıtype¸øÒ»¸öº¯ÊıÀàĞÍÆğÃû
+// è¿™æ˜¯ä¸€ä¸ªfuncå‡½æ•°å•¥çš„
 
-//Ã»ÓĞº¯ÊıÃû×ÖºÍ´óÀ¨ºÅ
-//FunctypeÊÇÒ»ÖÖº¯ÊıÀàĞÍ
+// è¿™é‡Œæµ‹è¯•ä¸€ä¸‹
+// è¿™é‡Œä¹Ÿæµ‹è¯•ä¸€ä¸‹
 type Functype func(int, int) int
 
-func main(){
+func main() {
 	var result int
-	result = add(1,1) // ´«Í³µ÷ÓÃ·½·¨
-	fmt.Println("result = ",result)	
+	result = add(1, 1) // è¿™é‡Œè¿˜åœ¨æµ‹è¯•
+	fmt.Println("result = ", result)
 	var ftest Functype
 	ftest = add
-	result = ftest(20,10)
-	fmt.Println("result = ", result) 
+	result = ftest(20, 10)
+	fmt.Println("result = ", result)
 }
